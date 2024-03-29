@@ -81,6 +81,9 @@ def uploadBlock(blockDescriptor, blockParent, mdFilePath, imagePathFunc=None):
 
         if imagePathFunc: #Transform by imagePathFunc insteadif provided
             imgSrc = imagePathFunc(imgRelSrc, mdFilePath)
+            if imgSrc is None:
+                newBlock.remove(permanently=True)
+                return
         else:
             imgSrc = relativePathForMarkdownUrl(imgRelSrc, mdFilePath)
             if not imgSrc:
