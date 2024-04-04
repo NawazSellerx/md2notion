@@ -8,8 +8,8 @@ import re
 from pathlib import Path
 from urllib.parse import unquote, urlparse, ParseResult
 import mistletoe
-from notion.block import EmbedOrUploadBlock, CollectionViewBlock, PageBlock
-from notion.client import NotionClient
+from notion_src.block import EmbedOrUploadBlock, CollectionViewBlock, PageBlock
+from notion_src.client import NotionClient
 from .NotionPyRenderer import NotionPyRenderer, addHtmlImgTagExtension, addLatexExtension
 
 
