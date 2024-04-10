@@ -2,7 +2,7 @@ from itertools import chain
 import random
 import re
 from collections.abc import Iterable
-from notion.block import CodeBlock, DividerBlock, HeaderBlock, SubheaderBlock, \
+from notion_src.block import CodeBlock, DividerBlock, HeaderBlock, SubheaderBlock, \
     SubsubheaderBlock, QuoteBlock, TextBlock, NumberedListBlock, \
     BulletedListBlock, ImageBlock, CollectionViewBlock, TodoBlock, EquationBlock
 from mistletoe.base_renderer import BaseRenderer
